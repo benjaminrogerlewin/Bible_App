@@ -22,8 +22,9 @@
 let button = document.querySelector("#searchButton")
 
 async function getData(event) {
+// event.preventDefault()
 let textInput = document.querySelector("#inputBar").value
-const url = `https://bible-api.com/john 3:16`
+const url = `https://bible-api.com/${textInput}?translation=kjv`
 
 
 fetch(url)
@@ -32,10 +33,18 @@ fetch(url)
 })
 .then(res => {
     console.log("success!", res)
+    let verseName = document.querySelector("#verseName")
+    verseName.innerText = res.verses[0].book_name
+    let verseText = document.querySelector("#verseText")
+    verseText.innerText = res.text
+    let chapter = document.querySelector("#chapter")
+    chapter.innerText = res.verses[0].chapter
+    let verse = document.querySelector("#verse")
+    verse.innerText = res.verses[0].verse
 })
 .catch(err => {
     console.log("error!", err)
 })
 }
 
-getData()
+button.addEventListener("click", getData)

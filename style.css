@@ -1,0 +1,87 @@
+body {
+    /* border: 5px solid; */
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.masterContainer {
+    /* border: 5px solid; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.textContainer {
+    border: 5px solid;
+    height: 600px;
+    width: 75vw;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#verseName {
+    border: 5px solid;
+    margin: 10px;
+}
+
+#verseText {
+    border: 5px solid;
+    margin: 10px;
+}
+
+.numberContainer {
+    /* border: 5px solid; */
+    margin: 10px;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.numberObject {
+    margin: 0px 10px 50px 10px;
+    border: 3px solid;
+    border-radius: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+}
+
+
+.search {
+    text-align: center;
+    margin: 30px;
+}
+
+#inputBar {
+    height: 5vh;
+    width: 50vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#searchButton {
+    height: 5vh;
+    width: 10vw;
+}
+
+

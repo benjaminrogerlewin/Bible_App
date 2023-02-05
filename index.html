@@ -8,40 +8,28 @@
     <title>Bible App</title>
 </head>
 <body>
-    <h1 class="title">Intro to API</h1>
+    <h1 class="title">King James Version</h1>
+
+    <div class="masterContainer">
+
+        <div class="textContainer">
+            <div class="textObject" id="verseName">hello</div>
+            <div class="textObject" id="verseText">hello</div>
+        </div>
+        <div class="numberContainer">
+            <div class="heading" id="chapterHeading">Chapter</div>
+            <div class="numberObject" id="chapter">hello</div>
+            <div class="heading" id="verseHeading">Verse</div>
+            <div class="numberObject" id="verse">hello</div>
+        </div>
+
+    </div>
 
     <form class="search">
-        <input type="text" id="inputBar" placeholder="enter text here" value="">
-        <input type="button" id="searchButton" value="Click here!">
+        <input type="text" id="inputBar" placeholder="Enter Verse, eg. John 3:16" value="">
+        <input type="button" id="searchButton" value="Search">
     </form>
 
-    <div class="container">
-        <div class="holder">
-            <h1>Name:</h1>
-            <div class="holderObject" id="pokemonName"></div>
-        </div>
-        <div class="holder">
-            <h1>Image:</h1>
-            <div class="holderObject" id="image"></div>
-        </div>
-        <div class="holder">
-            <h1>Height:</h1>
-            <div class="holderObject" id="height"></div>
-        </div>
-        <div class="holder">
-            <h1>Weight:</h1>
-            <div class="holderObject" id="weight"></div>
-        </div>
-        <div class="holder">
-            <h1>Abilities:</h1>
-            <div class="holderObject" id="abilities"></div>
-        </div>
-    </div>
-   
-
-   
-   
-    
 <script src="script.js"></script>    
 </body>
 </html>
