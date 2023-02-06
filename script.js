@@ -1,10 +1,9 @@
 let button = document.querySelector("#searchButton")
 
+
 async function getData(event) {
-// event.preventDefault()
 let textInput = document.querySelector("#inputBar").value
 const url = `https://bible-api.com/${textInput}?translation=kjv`
-
 
 fetch(url)
 .then(res => {
@@ -27,3 +26,5 @@ fetch(url)
 }
 
 button.addEventListener("click", getData)
+// chapter.addEventListener("click", ())
+// verse.addEventListener("click", ())
