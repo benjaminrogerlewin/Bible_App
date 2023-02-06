@@ -17,7 +17,7 @@ body {
 }
 
 .textContainer {
-    border: 5px solid;
+    /* border: 5px solid; */
     height: 600px;
     width: 75vw;
     margin: 10px;
@@ -82,6 +82,9 @@ body {
 .search {
     text-align: center;
     margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #inputBar {
@@ -93,8 +96,10 @@ body {
 }
 
 #searchButton {
-    height: 5vh;
+    height: 7vh;
     width: 10vw;
+    font-size: 20px;
+    padding: 10px;
 }
 
 
