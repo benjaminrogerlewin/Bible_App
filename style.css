@@ -22,19 +22,31 @@ body {
     width: 75vw;
     margin: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
 #verseName {
     border: 5px solid;
-    margin: 10px;
+    border-radius: 40%;
+    margin: 10px 10px 40px 10px;
+    height: 70px;
+    width: 500px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #verseText {
     border: 5px solid;
     margin: 10px;
+    height: 400px;
+    width: 900px;
+    font-size: 30px;
+    padding: 40px;
+    overflow: scroll;
 }
 
 .numberContainer {
@@ -77,6 +89,7 @@ body {
     width: 50vw;
     font-size: 20px;
     font-weight: bold;
+    padding: 7px;
 }
 
 #searchButton {
