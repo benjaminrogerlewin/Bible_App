@@ -30,6 +30,10 @@
     font-size: 20px;
 }
 
+.bibleApp {
+    transition: opacity 5s;
+}
+
 body {
     min-height: 100vh;
     max-width: 100vw;

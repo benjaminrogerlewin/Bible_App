@@ -2,6 +2,7 @@ let button = document.querySelector("#searchButton")
 let landingButton =document.querySelector("#landingButton")
 let bibleApp = document.querySelector(".bibleApp")
 let landing = document.querySelector(".landing")
+let body = document.querySelector(".body")
 
 async function getData(event) {
 let textInput = document.querySelector("#inputBar").value
@@ -28,6 +29,9 @@ fetch(url)
 }
 
 function enterPage() {
+    // bibleApp.fadeIn("slow", () => {
+    //     bibleApp.removeAttribute("hidden")
+    // })
     bibleApp.removeAttribute("hidden");
     landing.style.visibility = "hidden"
 }
