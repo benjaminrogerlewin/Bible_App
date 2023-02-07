@@ -1,5 +1,7 @@
 let button = document.querySelector("#searchButton")
-
+let landingButton =document.querySelector("#landingButton")
+let bibleApp = document.querySelector(".bibleApp")
+let landing = document.querySelector()
 
 async function getData(event) {
 let textInput = document.querySelector("#inputBar").value
@@ -25,6 +27,13 @@ fetch(url)
 })
 }
 
+function enterPage() {
+    bibleApp.removeAttribute("hidden");
+
+}
+
+
 button.addEventListener("click", getData)
+landingButton.addEventListener("click", enterPage)
 // chapter.addEventListener("click", ())
 // verse.addEventListener("click", ())

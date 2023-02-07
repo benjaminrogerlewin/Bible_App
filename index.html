@@ -8,27 +8,34 @@
     <title>Bible App</title>
 </head>
 <body>
-    <h1 class="title">King James Version</h1>
-
-    <div class="masterContainer">
-
-        <div class="textContainer">
-            <div class="textObject" id="verseName"></div>
-            <div class="textObject" id="verseText"></div>
-        </div>
-        <div class="numberContainer">
-            <div class="heading" id="chapterHeading">Chapter</div>
-            <div class="numberObject" id="chapter"></div>
-            <div class="heading" id="verseHeading">Verse</div>
-            <div class="numberObject" id="verse"></div>
-        </div>
-
+    <div class="landing">
+        <h1 class="introTitle">KJV Bible</h1>
+        <button id="landingButton">Enter</button>
     </div>
+    
+    <div class="bibleApp" hidden>
+        <h1 class="title">King James Version</h1>
 
-    <form class="search">
-        <input type="text" id="inputBar" placeholder="Enter Verse, eg. John 3:16" value="">
-        <input type="button" id="searchButton" value="Search">
-    </form>
+        <div class="masterContainer">
+
+            <div class="textContainer">
+                <div class="textObject" id="verseName"></div>
+                <div class="textObject" id="verseText"></div>
+            </div>
+            <div class="numberContainer">
+                <div class="heading" id="chapterHeading">Chapter</div>
+                <div class="numberObject" id="chapter"></div>
+                <div class="heading" id="verseHeading">Verse</div>
+                <div class="numberObject" id="verse"></div>
+            </div>
+
+        </div>
+
+        <form class="search">
+            <input type="text" id="inputBar" placeholder="Enter Verse, eg. John 3:16" value="">
+            <input type="button" id="searchButton" value="Search">
+        </form>
+    </div>
 
 <script src="script.js"></script>    
 </body>
