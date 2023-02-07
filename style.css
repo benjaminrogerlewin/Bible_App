@@ -11,13 +11,32 @@
     align-items: center;
 }
 
+.introTitle {
+    border: 5px solid;
+    font-size: 60px;
+    letter-spacing: 0.9rem;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingButton {
+    border: 5px solid;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 body {
     min-height: 100vh;
     max-width: 100vw;
     background-image: url("https://wallpaperaccess.com/full/1150753.jpg"); 
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(5px);
     margin: 0 auto;
     font-family: 'Fredericka the Great', cursive;
 }
