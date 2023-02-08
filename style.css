@@ -34,7 +34,7 @@
     opacity: 0;
 }
 
-/*Test*/
+/* The code below was created with help from Johan Runesson on whatabout.dev */
 
 .bibleApp.expanded {
   animation: fadeIn .5s ease-out forwards;
@@ -71,7 +71,7 @@
   }
 }
 
-/*end test*/
+/* End of code help*/
 
 body {
     min-height: 100vh;

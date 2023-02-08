@@ -28,13 +28,7 @@ fetch(url)
 })
 }
 
-// function enterPage() {
-//     bibleApp.removeAttribute("hidden");
-//     landing.style.visibility = "hidden"
-// }
-
-//test
-
+//The code below was created with help from Johan Runesson on whatabout.dev
 
 const btn = document.getElementById("btn");
 const content = document.getElementById("content");
@@ -47,18 +41,13 @@ landingButton.addEventListener("click", () => {
     setTimeout(() => {
       bibleApp.classList.remove("exiting");
       bibleApp.setAttribute("hidden", true);
-    }, 500);
+    }, 9000);
   } else {
     bibleApp.classList.add("expanded");
     bibleApp.removeAttribute("hidden");
   }
-
   expanded = !expanded;
   landing.style.visibility = "hidden"
 });
 
-//end test
-
-
 button.addEventListener("click", getData)
-// landingButton.addEventListener("click", enterPage)
