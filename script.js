@@ -28,13 +28,37 @@ fetch(url)
 })
 }
 
-function enterPage() {
+// function enterPage() {
+//     bibleApp.removeAttribute("hidden");
+//     landing.style.visibility = "hidden"
+// }
+
+//test
+
+
+const btn = document.getElementById("btn");
+const content = document.getElementById("content");
+let expanded = false;
+
+landingButton.addEventListener("click", () => {
+  if (expanded) {
+    bibleApp.classList.remove("expanded");
+    bibleApp.classList.add("exiting");
+    setTimeout(() => {
+      bibleApp.classList.remove("exiting");
+      bibleApp.setAttribute("hidden", true);
+    }, 500);
+  } else {
+    bibleApp.classList.add("expanded");
     bibleApp.removeAttribute("hidden");
-    landing.style.visibility = "hidden"
-}
+  }
+
+  expanded = !expanded;
+  landing.style.visibility = "hidden"
+});
+
+//end test
 
 
 button.addEventListener("click", getData)
-landingButton.addEventListener("click", enterPage)
-// chapter.addEventListener("click", ())
-// verse.addEventListener("click", ())
+// landingButton.addEventListener("click", enterPage)

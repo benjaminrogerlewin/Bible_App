@@ -31,8 +31,47 @@
 }
 
 .bibleApp {
-    transition: opacity 5s;
+    opacity: 0;
 }
+
+/*Test*/
+
+.bibleApp.expanded {
+  animation: fadeIn .5s ease-out forwards;
+}
+.bibleApp.exiting {
+  animation: fadeOut .5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/*end test*/
 
 body {
     min-height: 100vh;
