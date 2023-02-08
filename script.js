@@ -21,7 +21,7 @@ fetch(url)
     let chapter = document.querySelector("#chapter")
     chapter.innerText = res.verses[0].chapter
     let verse = document.querySelector("#verse")
-    verse.innerText = res.verses[0].verse
+    verse.innerText = res.reference.slice(7)
 })
 .catch(err => {
     console.log("error!", err)
