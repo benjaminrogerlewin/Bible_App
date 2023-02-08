@@ -29,9 +29,6 @@ fetch(url)
 }
 
 function enterPage() {
-    // bibleApp.fadeIn("slow", () => {
-    //     bibleApp.removeAttribute("hidden")
-    // })
     bibleApp.removeAttribute("hidden");
     landing.style.visibility = "hidden"
 }
