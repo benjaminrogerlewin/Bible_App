@@ -22,7 +22,7 @@
 }
 
 #landingButton {
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 15%;
     height: 50px;
     width: 150px;
@@ -47,6 +47,13 @@
 .bibleApp.exiting {
   animation: fadeOut .5s ease-out forwards;
 }
+
+.masterContainer.expanded {
+    animation: fadeIn .5s ease-out forwards;
+  }
+.masterContainer.exiting {
+    animation: fadeOut .5s ease-out forwards;
+  }
 
 @keyframes fadeIn {
   0% {
