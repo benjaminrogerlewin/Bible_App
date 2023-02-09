@@ -48,7 +48,7 @@ landingButton.addEventListener("click", () => {
     setTimeout(() => {
       bibleApp.classList.remove("exiting");
       bibleApp.setAttribute("hidden", true);
-    }, 9000);
+    }, 500);
   } else {
     bibleApp.classList.add("expanded");
     bibleApp.removeAttribute("hidden");
