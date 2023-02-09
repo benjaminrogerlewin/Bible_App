@@ -24,7 +24,6 @@ fetch(url)
     let verse = document.querySelector("#verse")
     let endVerse = res.verses[res.verses.length - 1].verse
     verse.innerText = `${res.verses[0].verse} - ${endVerse}`
-    console.log(endVerse)
 })
 .catch(err => {
     console.log("error!", err)
