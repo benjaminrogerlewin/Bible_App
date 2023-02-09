@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Fredericka+the+Great&family=Playfair+Display+SC:wght@700&family=Poiret+One&display=swap');
 
-
 .landing {
     position: absolute;
     height: 100vh;
@@ -98,13 +97,11 @@ body {
 }
 
 .masterContainer {
-    /* border: 5px solid; */
     display: flex;
     justify-content: flex-start;
 }
 
 .textContainer {
-    /* border: 5px solid; */
     height: 600px;
     width: 75vw;
     margin: 10px;
@@ -117,7 +114,6 @@ body {
 #verseName {
     border: 1px solid;
     box-shadow: 8px 8px 8px rgba(7, 7, 7, 0.7);
-    /* border-radius: 10%; */
     background: rgba(174, 157, 157, 0.8);
     margin: 10px 10px 40px 10px;
     height: 70px;
@@ -131,7 +127,6 @@ body {
 
 #verseText {
     border: 1px solid;
-    /* border-radius: 5%; */
     background: rgba(174, 157, 157, 0.8);
     box-shadow: 8px 8px 8px rgba(7, 7, 7, 0.7);
     margin: 10px;
@@ -143,7 +138,6 @@ body {
 }
 
 .numberContainer {
-    /* border: 5px solid; */
     margin: 170px 10px 0px 10px;
     width: 20vw;
     height: 50vh;
@@ -175,7 +169,6 @@ body {
     height: 150px;
     width: 170px;
 }
-
 
 .search {
     text-align: center;
