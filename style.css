@@ -23,11 +23,13 @@
 }
 
 #landingButton {
-    border: 5px solid;
+    border: 1px solid;
+    border-radius: 15%;
     height: 50px;
     width: 150px;
     cursor: pointer;
     font-size: 20px;
+    background: rgba(174, 157, 157, 0.8);
 }
 
 #landingButton:hover {
