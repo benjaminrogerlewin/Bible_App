@@ -3,11 +3,14 @@ let landingButton =document.querySelector("#landingButton")
 let bibleApp = document.querySelector(".bibleApp")
 let landing = document.querySelector(".landing")
 let body = document.querySelector(".body")
+let masterContainer = document.querySelector(".masterContainer")
 let expanded = false
 
 async function getData(event) {
 let textInput = document.querySelector("#inputBar").value
 const url = `https://bible-api.com/${textInput}?translation=kjv`
+
+masterContainer.style.visibility = "visible"
 
 fetch(url)
 .then(res => {
@@ -47,6 +50,7 @@ landingButton.addEventListener("click", () => {
   } else {
     bibleApp.classList.add("expanded");
     bibleApp.removeAttribute("hidden");
+    masterContainer.style.visibility = "hidden"
   }
   expanded = !expanded;
   landing.style.visibility = "hidden"
