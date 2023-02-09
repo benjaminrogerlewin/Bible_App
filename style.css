@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Fredericka+the+Great&family=Playfair+Display+SC:wght@700&family=Poiret+One&display=swap');
 
-
 .landing {
     position: absolute;
     height: 100vh;
@@ -95,6 +94,13 @@ body {
     color: white;
     letter-spacing: 0.3em;
     text-shadow: 8px 8px 8px rgba(7, 7, 7, 0.7);
+}
+
+img {
+    position: absolute;
+    text-align: center;
+    margin-left: 465px;
+    margin-top: 80px;
 }
 
 .masterContainer {

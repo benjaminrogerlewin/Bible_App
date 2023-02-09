@@ -4,6 +4,7 @@ let bibleApp = document.querySelector(".bibleApp")
 let landing = document.querySelector(".landing")
 let body = document.querySelector(".body")
 let masterContainer = document.querySelector(".masterContainer")
+let bibleImage = document.querySelector(".bibleImage")
 let expanded = false
 
 async function getData(event) {
@@ -11,6 +12,7 @@ let textInput = document.querySelector("#inputBar").value
 const url = `https://bible-api.com/${textInput}?translation=kjv`
 
 masterContainer.style.visibility = "visible"
+bibleImage.style.visibility = "hidden"
 
 fetch(url)
 .then(res => {
