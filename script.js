@@ -3,6 +3,7 @@ let landingButton =document.querySelector("#landingButton")
 let bibleApp = document.querySelector(".bibleApp")
 let landing = document.querySelector(".landing")
 let body = document.querySelector(".body")
+let expanded = false
 
 async function getData(event) {
 let textInput = document.querySelector("#inputBar").value
@@ -29,10 +30,6 @@ fetch(url)
 }
 
 //The code below was created with help from Johan Runesson on whatabout.dev
-
-const btn = document.getElementById("btn");
-const content = document.getElementById("content");
-let expanded = false;
 
 landingButton.addEventListener("click", () => {
   if (expanded) {
