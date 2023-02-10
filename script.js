@@ -58,4 +58,6 @@ landingButton.addEventListener("click", () => {
   landing.style.visibility = "hidden"
 });
 
+// end of code help
+
 button.addEventListener("click", getData)
