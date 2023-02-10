@@ -115,13 +115,11 @@ img {
 }
 
 .masterContainer {
-    /* border: 5px solid; */
     display: flex;
     justify-content: flex-start;
 }
 
 .textContainer {
-    /* border: 5px solid; */
     height: 600px;
     width: 75vw;
     margin: 10px;
@@ -219,4 +217,3 @@ img {
     box-shadow: 8px 8px 8px rgba(7, 7, 7, 0.7);
     cursor: pointer;
 }
-
